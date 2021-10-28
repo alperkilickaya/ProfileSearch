@@ -7,6 +7,7 @@ const searchProfile = document.querySelector("#searchProfile")
 searchProfile.addEventListener("keyup", (event)=>{
    
     let text = event.target.value;
+    text= text.toLowerCase();
     text = text.charAt(0).toUpperCase() + text.slice(1);
     ui.clear()
 
